@@ -1,5 +1,5 @@
 # Description
-A jQuery plugin that highlights and attaches a tooltip to each word matching an array of keywords returned from the Alchemy API. You call the function on an DOM element to have it analyze the contents of that element against Alchemy results.
+A jQuery plugin that highlights and attaches a tooltip to each word matching an array of keywords returned from the Alchemy API. Call the function on an DOM element to have it analyze the contents of that element against Alchemy results.
 
 # Usage
 ```
@@ -21,6 +21,7 @@ A jQuery plugin that highlights and attaches a tooltip to each word matching an 
 ```
 ### Usage Notes
 The `tagify()` function takes 2 arguments:
+
 1. The API response from Alchemy. This would be baked into the plugin in a production app.
 2. `0.285` is the relevance threshold from the Alchemy API. It basically means 'Don't look at any keywords with a relevance less than 0.285'. This is tailored to the specific results I was working with, so in production we would need a more elegant solution to decide our threshold. Maybe checking Google Maps / Google Places APIs to see if the entity exists.
 
