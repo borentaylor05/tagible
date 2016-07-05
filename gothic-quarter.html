@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style>
+  .tooltip {
+    display: inline;
+  }
+  .tooltip-item {
+    text-align: center;
+    float: left;
+    margin: 5px;
+  }
+
+  .tooltip-item__p {
+    margin-top: 0;
+    font-size: .7rem;
+  }
+</style>
+<body>
+
+<div class="typical-content tour-special">
+  <div class="container">
+    <div class="col-xs-12">
+      <h2 style="color: rgb(4, 61, 64);" class="text-left">
+        What makes this tour special...
+      </h2>
+
+      <hr class="left-hr" style="background-color: #043D40">
+
+      <div class="overwrite-container">
+
+        <div>
+          <div class="content whatsincluded" ng-bind-html="pgtour.description">
+            <ul>
+              <li>Visit the majestic&nbsp;<strong>Barcelona Cathedral</strong> (also known as Cathedral de la Santa Cruz
+                y Santa Eulalia).
+              </li>
+              <li>Explore Barcelona’s most vibrant boulevard –&nbsp;<strong>Las Ramblas</strong>.&nbsp;</li>
+              <li>Marvel at the ancient,&nbsp;<strong>Gothic architecture</strong>&nbsp;of the Old Town.</li>
+              <li>Discover sleepy churchyards, medieval alleyways and crumbling Gothic Palaces.&nbsp;</li>
+              <li>Take a stroll through&nbsp;<strong>La Boquieria</strong>&nbsp;– the busiest market in the city.&nbsp;
+              </li>
+            </ul>
+            <div><br>In
+              this three-hour tour, you will learn more about the rich history of the
+              Gothic Centre of Barcelona, which has developed enormously since the
+              Roman period to become the thriving hub that it is today. &nbsp;
+                <br><br>
+                The&nbsp;<strong>Gothic Quarter</strong>&nbsp;–
+              also known as Barri Gòtic, is the area that stretches from La Rambla to
+              Via Laietana, and from the Mediterranean seafront to Ronda de Sant Pere
+              and is the centre of the old city of Barcelona. It is known as the
+              Gothic Quarter as it used to be the location of a Roman village and some
+              of the remnants still remain. Currently, the Gothic Quarter is perhaps
+              one of the most exciting part of the city as it’s home to some of
+              Barcelona’s most famous landmarks, excellent restaurants, amazing
+              restaurants and many squares (plaças) to relax and unwind.&nbsp;</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/gothic-quarter.js"></script>
+<script src="js/tb-tagible.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.tour-special').tagify(alchemyResponse, 0.285);
+  });
+</script>
+</body>
+</html>
